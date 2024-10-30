@@ -1,6 +1,6 @@
 import mongoose, { Document, Schema } from "mongoose";
 
-interface IConversion extends Document {
+export interface IConversion extends Document {
     amount: number; 
     baseCurrency: string; 
     targetCurrency: string; 
@@ -15,4 +15,5 @@ const ConversionSchema: Schema<IConversion> = new Schema({
 });
 
 const Conversion = mongoose.model<IConversion>('Conversion', ConversionSchema);
+export {ConversionSchema};
 export default Conversion;
