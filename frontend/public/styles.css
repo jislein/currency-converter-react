@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F0F5FF;
+}
+
+.converter-card {
+    text-align: center;
+    background-color: white;
+    padding: 40px 30px;
+    max-width: 900px;
+    /* width: 46.88%; */
+    box-shadow: rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.header p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.header p > span {
+    font-weight: 700;
+}
+
+.currency-converter {
+    display: flex;
+    align-items: center;    
+}
+
+.swap {
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    /* align-items: center; */
+    padding: 10px;
+}
+
+.swap button {
+    font-size: 36px;
+    text-align: center;
+    /* transform: scale(2,2); */
+    /* outline: none; */
+    border: none;
+    background: none;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.swap button:hover {
+    transform: scale(1.25);
+}
+
+.convert {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.convert button {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: 1A1A1A;
+    width: 370px;
+    height: 46px;
+    background: none;
+    background-color: rgba(229, 19, 58, 0);
+    border: 2px solid #E5133A;
+    border-radius: 4px;
+    transition: 
+        background-color 0.3s,
+        color 0.3s;
+}
+
+.convert button:hover {
+    background-color: rgba(229, 19, 58, 1);
+    color: white;
+    cursor: pointer;
+}
